@@ -3,7 +3,7 @@ assert(falling_node ~= nil)
 
 local normal = falling_node.on_step
 function falling_node:on_step(dtime, moveresult)
-	local pos = self.object:getpos()
+	local pos = self.object:get_pos()
 	local name = ""
 	if moveresult.collides then
 		if self["owner"] then
